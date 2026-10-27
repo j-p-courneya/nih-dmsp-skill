@@ -163,5 +163,5 @@ If you write about it, feel free to link back here.
 
 ---
 
-*Built by [Jean-Paul Courneya](https://github.com/yourhandle) · University of Maryland, Baltimore*
+*Built by [Jean-Paul Courneya](https://github.com/j-p-courneya) · University of Maryland, Baltimore*
 *Last updated: October 2026 · Reflects NOT-OD-26-046 and the 2026 NIH DMS Plan format page*
