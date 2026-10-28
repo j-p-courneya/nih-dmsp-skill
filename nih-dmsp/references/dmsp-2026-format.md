@@ -42,7 +42,8 @@ Free text, 300 words maximum.
 
 Complete when any of elements 1 through 3 is No, or when sharing will be
 limited in some other way (most often controlled access for human data).
-Otherwise write "Not applicable."
+Otherwise leave the element 4 answer area blank on the format page
+(in the markdown fallback, leave it blank as well).
 
 State the specific reason for each limitation: consent restrictions,
 HIPAA/other legal limits, tribal or cultural considerations, contractual or

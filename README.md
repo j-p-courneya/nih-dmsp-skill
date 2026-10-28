@@ -18,7 +18,7 @@ Most existing DMSP examples, templates, and guides still reflect the old format.
 
 Given a small set of logistical inputs (mechanism, institute, data types, human subjects status, GDS applicability), the skill produces two files.
 
-The **plan** mirrors the NIH format page element by element:
+The **plan** is the NIH DMS Plan format page itself (.docx), filled in: checkboxes ticked, element 4 written, and the element 6 table populated. The skill builds it from a blank format page you provide, or from one of your earlier 2026-format plans, so the output is ready to review and submit. If no template is available, it falls back to a markdown version of the same layout. The plan covers each element of the format page:
 
 | # | Element | Response |
 |---|---|---|
@@ -30,7 +30,9 @@ The **plan** mirrors the NIH format page element by element:
 | 6 | Data table: Expected Data Type, Repository | Table, 100 words max |
 | 7a, 7b | GDS Policy: accelerated sharing, Institutional Certification | Yes / No / Not Applicable |
 
-Checkbox elements get a checkbox and nothing else. The skill counts words for elements 4 and 6 and reports them.
+Checkbox elements get a checkbox and nothing else. The skill counts words for elements 4 and 6 and reports them. The draft keeps NIH's italic instructions so you can see the guidance while reviewing; ask for a submission-ready copy and the skill removes them.
+
+The skill can also convert a funded pre-2026 narrative plan to the new format, taking every answer from the old plan and recording in the companion file which old section each new element came from.
 
 The **companion file** holds everything that does not belong on the plan: draft budget justification language, the assumptions made during drafting, and a researcher review checklist.
 
@@ -94,7 +96,9 @@ Once installed, trigger the skill by asking Claude something like:
 - *"I need the new 2026 NIH data sharing plan format"*
 - *"Write the data management section for my grant: no human subjects, bulk RNA-seq"*
 
-Claude will show the privacy notice, ask the intake questions as a group, and produce the plan and companion file as markdown. If you upload the blank NIH format page (.docx), the skill follows its wording and limits and tells you if anything differs from what it expected.
+Claude will show the privacy notice, ask the intake questions as a group, and produce the plan as a filled-in NIH format page (.docx) plus a markdown companion file. Upload the blank NIH format page (.docx) or point Claude to a previous 2026-format plan to use as the template; the skill follows the template's wording and limits and tells you if anything differs from what it expected. Without a template, the plan is produced as markdown.
+
+To convert an existing funded plan, attach it and ask, for example: *"Convert this DMSP to the 2026 format."*
 
 ---
 
@@ -159,5 +163,5 @@ If you write about it, feel free to link back here.
 
 ---
 
-*Built by [Jean-Paul Courneya](https://github.com/yourhandle) · University of Maryland, Baltimore*
-*Last updated: September 2026 · Reflects NOT-OD-26-046 and the 2026 NIH DMS Plan format page*
+*Built by [Jean-Paul Courneya](https://github.com/j-p-courneya) · University of Maryland, Baltimore*
+*Last updated: October 2026 · Reflects NOT-OD-26-046 and the 2026 NIH DMS Plan format page*
